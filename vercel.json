@@ -1,0 +1,29 @@
+
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
+      }
+    ],
+    "env":{ 
+      "PORT":5000, 
+      "DB_URI":"mongodb+srv://ajaj51572:UtlAU6yFjprR9WzY@cluster0.1waowj3.mongodb.net/GoogleAuth?retryWrites=true&w=majority",
+      "JWT_SECRET_KEY":"MERNSTACKPROJECT",
+      "CLIENT_ID":"519570049807-2totqnoh16afdk70usu7v9a332j6u0jt.apps.googleusercontent.com",
+      "CLIENT_SECRET":"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" 
+    }
+  }
+  
+  
+  
+  
+  
+  
