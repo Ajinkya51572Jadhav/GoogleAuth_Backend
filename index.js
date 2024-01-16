@@ -36,7 +36,7 @@
 
        
       app.use(cors({
-        origin:"http://localhost:3000",
+        origin:"https://login-905a9.web.app",
         methods:"GET,POST,PUT,DELETE",
         credentials:true
       }));
@@ -101,8 +101,8 @@
               app.get("/auth/google",passport.authenticate("google",{scope:["profile","email"]}))
 
               app.get("/auth/google/callback",passport.authenticate("google",{
-                successRedirect:"http://localhost:3000/",
-                failureRedirect:"http://localhost:3000/*"
+                successRedirect:"https://login-905a9.web.app",
+                failureRedirect:"https://login-905a9.web.app/*"
               }))
 
               
